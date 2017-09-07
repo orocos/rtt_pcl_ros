@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rtt_pcl_ros</name>
+  <version>0.0.0</version>
+  <description>An Orocos RTT ROS transport plugin for PCL types</description>
+
+  <maintainer email="orocos-dev@lists.mech.kuleuven.be">Orocos Developers</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/rtt_pcl_ros</url>
+  <url type="bugtracker">https://github.com/orocos/rtt_pcl_ros</url>
+
+  <author email="johannes@intermodalics.eu">Johannes Meyer</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rtt_pcl</depend>
+  <depend>rtt_roscomm</depend>
+  <depend>pcl_ros</depend>
+
+  <export>
+    <rtt_ros>
+      <plugin_depend>rtt_pcl</plugin_depend>
+    </rtt_ros>
+  </export>
+
+</package>
